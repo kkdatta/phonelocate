@@ -12,8 +12,16 @@
     android:orientation="vertical"
     >
 
-    <com.lamudi.phonefield.PhoneInputLayout
-        android:id="@+id/phone_input_layout"
+    <!--<com.lamudi.phonefield.PhoneInputLayout-->
+        <!--android:id="@+id/phone_input_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_marginBottom="16dp"-->
+        <!--/>-->
+
+    <EditText
+        android:id="@+id/edit_text_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -33,5 +41,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/submit"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/existing_number"
+        android:id="@+id/history"
+        android:layout_below="@+id/submit_button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         />
 </LinearLayout>
